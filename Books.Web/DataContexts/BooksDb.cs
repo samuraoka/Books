@@ -11,6 +11,8 @@ namespace Books.Web.DataContexts
     // PM> Add-Migration -Name InitialCreate -ConfigurationTypeName Books.Web.DataContexts.BookMigrations.Configuration
     // PM> get-help update-database
     // PM> Update-Database -ConfigurationTypeName Books.Web.DataContexts.BookMigrations.Configuration
+    // PM> Install-Package Glimpse.Mvc5
+    // PM> Install-Package Glimpse.EF6
     public class BooksDb : DbContext
     {
         public BooksDb()
