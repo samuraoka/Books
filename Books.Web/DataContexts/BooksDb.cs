@@ -20,5 +20,11 @@ namespace Books.Web.DataContexts
         }
 
         public DbSet<Book> Books { get; set; }
+
+        protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        {
+            modelBuilder.HasDefaultSchema("library");
+            base.OnModelCreating(modelBuilder);
+        }
     }
 }
